@@ -51,7 +51,7 @@ external_declaration
 	;
 
 include
-    : INCLUDE STRING_LITERAL                    {strcpy($$, "#include ");strcat($$, $2);}
+    : INCLUDE STRING_LITERAL                    {strcpy($$, "#include ");strcat($$, $2);strcat($$, "\n");}
     ;
 
 declaration
@@ -63,11 +63,11 @@ declaration_specifier
     ;
 
 type_specifier
-	: VOID                                      {strcpy($$, "void");}
-	| CHAR                                      {strcpy($$, "char");}
-	| INT                                       {strcpy($$, "int");}
-	| FLOAT                                     {strcpy($$, "float");}
-	| DOUBLE                                    {strcpy($$, "double");}
+	: VOID                                      {strcpy($$, "void ");}
+	| CHAR                                      {strcpy($$, "char ");}
+	| INT                                       {strcpy($$, "int ");}
+	| FLOAT                                     {strcpy($$, "float ");}
+	| DOUBLE                                    {strcpy($$, "double ");}
 	;
 
 init_declarator

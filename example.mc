@@ -1,12 +1,8 @@
 #include "stdio.h"
 
-int a;
-float b;
-char c;
-
 int test(int b) {
     int y = 5;
-    
+
     while(y >= 0) {
         printf("%d", y);
         y = y - 1;

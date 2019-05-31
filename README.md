@@ -10,5 +10,9 @@ sudo apt install flex bison
 lex minic.l
 yacc -d minic.y
 
-gcc -o minicc y.tab.c lex.yy.c
+gcc y.tab.c lex.yy.c -lfl -ly -o minicc
+
+./minicc < example.mc > example.c
+gcc example.c -o example
+./example
 ```
