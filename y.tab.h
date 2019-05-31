@@ -45,58 +45,56 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    IDENTIFIER = 258,
-    CONSTANT = 259,
-    STRING_LITERAL = 260,
-    LE_OP = 261,
-    GE_OP = 262,
-    EQ_OP = 263,
-    NE_OP = 264,
-    AND_OP = 265,
-    OR_OP = 266,
-    VOID = 267,
-    CHAR = 268,
-    INT = 269,
-    FLOAT = 270,
-    DOUBLE = 271,
-    IF = 272,
-    ELSE = 273,
-    WHILE = 274,
-    DO = 275,
-    FOR = 276
+    INCLUDE = 258,
+    IDENTIFIER = 259,
+    CONSTANT = 260,
+    STRING_LITERAL = 261,
+    LE_OP = 262,
+    GE_OP = 263,
+    EQ_OP = 264,
+    NE_OP = 265,
+    AND_OP = 266,
+    OR_OP = 267,
+    VOID = 268,
+    CHAR = 269,
+    INT = 270,
+    FLOAT = 271,
+    DOUBLE = 272,
+    IF = 273,
+    ELSE = 274,
+    WHILE = 275
   };
 #endif
 /* Tokens.  */
-#define IDENTIFIER 258
-#define CONSTANT 259
-#define STRING_LITERAL 260
-#define LE_OP 261
-#define GE_OP 262
-#define EQ_OP 263
-#define NE_OP 264
-#define AND_OP 265
-#define OR_OP 266
-#define VOID 267
-#define CHAR 268
-#define INT 269
-#define FLOAT 270
-#define DOUBLE 271
-#define IF 272
-#define ELSE 273
-#define WHILE 274
-#define DO 275
-#define FOR 276
+#define INCLUDE 258
+#define IDENTIFIER 259
+#define CONSTANT 260
+#define STRING_LITERAL 261
+#define LE_OP 262
+#define GE_OP 263
+#define EQ_OP 264
+#define NE_OP 265
+#define AND_OP 266
+#define OR_OP 267
+#define VOID 268
+#define CHAR 269
+#define INT 270
+#define FLOAT 271
+#define DOUBLE 272
+#define IF 273
+#define ELSE 274
+#define WHILE 275
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 
 union YYSTYPE
 {
-#line 19 "minic.y" /* yacc.c:1909  */
+#line 20 "minic.y" /* yacc.c:1909  */
 
     char source[4096];
 
-#line 100 "y.tab.h" /* yacc.c:1909  */
+#line 98 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;

@@ -1,23 +1,14 @@
-D			[0-9]
-L			[a-zA-Z_]
-H			[a-fA-F0-9]
-E			[Ee][+-]?{D}+
-FS			(f|F|l|L)
-IS			(u|U|l|L)*
-
 %{
 #include <stdio.h>
 #include "y.tab.h"
 %}
 
 %%
-
+"#include "     { return(INCLUDE); }
 "char"			{ return(CHAR); }
-"do"			{ return(DO); }
 "double"		{ return(DOUBLE); }
 "else"			{ return(ELSE); }
 "float"			{ return(FLOAT); }
-"for"			{ return(FOR); }
 "if"			{ return(IF); }
 "int"			{ return(INT); }
 "void"			{ return(VOID); }
