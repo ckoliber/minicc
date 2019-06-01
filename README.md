@@ -16,3 +16,5 @@ gcc y.tab.c lex.yy.c -lfl -ly -o minicc
 gcc example.c -o example
 ./example
 ```
+
+[![asciicast](https://asciinema.org/a/lAWFSxNOglwjm86Ng7Em7Sv06.svg)](https://asciinema.org/a/lAWFSxNOglwjm86Ng7Em7Sv06)
